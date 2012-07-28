@@ -1,0 +1,45 @@
+/******************************************************************************
+* FILE:        mudlist_pages.css
+* DESCRIPTION: Stylesheet for the AberMUDList website
+*              Note that Opera 5.2 does not like _ in the class names.
+* VERSION:     V1.1 (2004-04-25)
+*
+* Modification history:
+*
+* Date         Version  Author                  Comments
+* 2002-02-02   1.0      A. Nathan.              Created original version.
+* 2004-04-25   1.1      A. Nathan               Made classes/tags lowercase
+*                                               for XHTML.
+******************************************************************************/
+body            { font-family: Arial, Geneva, Helvetica, sans-serif;
+                  background-color: #DDDDFF;
+                  color: #000000;
+                  font-size: 10pt; }
+h1.title        { font-family: Arial, Geneva, Helvetica, sans-serif; font-size: 24pt; }
+h2              { font-family: Arial, Geneva, Helvetica, sans-serif; font-size: 18pt; }
+h3              { font-family: Arial, Geneva, Helvetica, sans-serif; font-size: 14pt; }
+p               { font-family: Arial, Geneva, Helvetica, sans-serif; font-size: 10pt; }
+td              { font-family: Arial, Geneva, Helvetica, sans-serif; font-size: 10pt; }
+td.menu         { font-family: Arial, Geneva, Helvetica, sans-serif; font-size: 10pt; background-color: #AAAADD; }
+td.copy         { font-family: Arial, Geneva, Helvetica, sans-serif; font-size: 8pt; font-style: italic; }
+td.footlinks    { font-family: Arial, Geneva, Helvetica, sans-serif; font-size: 8pt; }
+td.newsdate     { font-family: Arial, Geneva, Helvetica, sans-serif; font-size: 10pt; text-align: left; }
+td.newstext     { font-family: Arial, Geneva, Helvetica, sans-serif; font-size: 10pt; text-align: left; }
+table           { font-family: Arial, Geneva, Helvetica, sans-serif; font-size: 10pt; }
+table.header    { background-color: #AAAADD; }
+table.menu      { background-color: #AAAADD; }
+td.menu         { background-color: #DDDDFF;
+                  background: url(images/AberMUDList_menu_cell.gif);
+                  height: 36px;
+                  text-align: center;
+                  padding-top: 4px; }
+a.menu:link     { text-decoration: none; }
+a.menu:visited  { text-decoration: none; }
+a.menu:active   { color: #C000C0; text-decoration: underline; }
+a.menu:hover    { color: #C000C0; text-decoration: underline; }
+table.form      { background-color: #DDDDFF; }
+th              { font-family: Arial, Geneva, Helvetica, sans-serif; font-size: 10pt; }
+tr.tableheading { background-color: #DDDDFF; }
+tr.colour1      { background-color: #FFDDFF; }
+tr.colour2      { background-color: #DDDDFF; }
+span.code       { font-family: monospace; }

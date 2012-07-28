@@ -1,0 +1,16 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Trydan/Controllers/HomeController.cs">
+    <Files>
+      <File FileName="Trydan/Domain/Payment.cs" Line="10" Column="65" />
+      <File FileName="Trydan/Domain/Reading.cs" Line="10" Column="55" />
+      <File FileName="Trydan/Controllers/HomeController.cs" Line="37" Column="4" />
+      <File FileName="Trydan/Views/Home/Index.aspx" Line="10" Column="42" />
+      <File FileName="Trydan/Domain/Maps/PaymentMap.cs" Line="2" Column="5" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>

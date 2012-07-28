@@ -1,0 +1,228 @@
+body
+{
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  /*background-color: #DDDDFF;*/
+  background-color: #000;
+  color: #FFF;
+  font-size: 0.95em;
+}
+
+a, a:visited
+{
+  font-weight: bold;
+  color: #DDD;
+  text-decoration: none;
+}
+a:hover
+{
+  text-decoration: underline;
+}
+
+p
+{
+  margin: 0.5em 0em;
+}
+
+div#headerContainer, div#footer
+{
+  /*background-color: #141414;*/
+  background-color: #202020;
+}
+
+div#bodyContainer
+{
+  width: 55em;
+  /*color: #DDDDFF; */
+  color: #CCC;
+  background-color: #000000;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1em;
+  font-size: 1em;
+}
+
+div#header
+{
+  text-align: left;
+  /*
+  background-image: url('/static/images/20081116-015-Castell-3.jpg');
+  background-position: right;
+  background-repeat: none;
+  */
+  width: 55em;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1em;
+  font-size: 1em;
+}
+
+img#headerImage
+{
+  float: right;
+}
+span.maintitlesubtitle
+{
+  font-size: 0.5em;
+}
+
+span.subtitle
+{
+  color: #CCC;
+}
+
+div#content
+{
+  text-align: left;
+}
+
+div#footer
+{
+  padding: 0.75em;
+  /*width: 100%;*/
+  clear: both;
+  margin-top: 1em;
+}
+
+div#footer p
+{
+  font-size: 0.7em;
+}
+
+div#top_navigation
+{
+  margin: 0.5em -0.5em 0.25em -0.5em;
+  padding: 0.1em;
+  /*
+  background-color: #4F1E1E;
+  */
+  clear: both;
+}
+
+div#top_navigation ul
+{
+  list-style-type: none;
+  list-style-position: outside;
+  padding: 0.5em 0;
+  margin: 0;
+  font-size: 1.1em;
+}
+
+div#top_navigation li
+{
+  display: inline;
+  padding-left: 1em;
+  padding-right: 0.5em;
+  background-image: url('/static/images/FireCentre.png');
+  background-repeat: no-repeat;
+  background-position: left center;
+}
+
+div#top_navigation li.first
+{
+  background-image: none;
+  padding-left: 0.5em;
+}
+
+h2
+{
+  color: #FFF;
+  background-image: url('/static/images/Draig4.png');
+  padding-left: 1.4em;
+  background-position: left center;
+  background-repeat: no-repeat;
+}
+
+h3
+{
+  color: #EEE;
+  margin-bottom: 0.5em;
+}
+
+div.sideContentPanel h2
+{
+  padding-left: 1.6em;
+}
+
+/*
+h2 img
+{
+  vertical-align: top;
+  padding-right: 0.25em;
+}
+*/
+
+div.mainContentPanel, div.sideContentPanel
+{
+  background-color: #202020;
+  padding: 0.25em 1em;
+  margin-bottom: 1em;
+  /*border: solid 1px green;*/
+  border-radius: 8px;
+}
+
+div.mainContentPanel
+{
+  float: left;
+  width: 35em;
+}
+
+div.mainContentPanelForMUDList
+{
+  width: 100%;
+}
+
+div.sideContentPanel
+{
+  float: right;
+  width: 17em;
+  font-size: 0.85em;
+}
+
+ul.news
+{
+  list-style-position: outside;
+  padding-left: 1em;
+}
+
+ul.news li
+{
+  margin-bottom: 0.3em;
+}
+
+span.newsDate
+{
+  font-size: 0.8em;
+  font-style: italic;
+  color: #909090;
+}
+
+p.newsMore
+{
+  font-size: 0.8em;
+  color: #909090;
+  text-align: right;
+  padding-right: 1em;
+}
+
+span.command
+{
+  font-family: Courier New, Courier, sans-serif;
+  font-size: 0.9em;
+}
+
+table.MUDlist
+{
+  width: 100%;
+}
+
+table.MUDlist .MUDstatus, table.MUDlist th
+{
+  text-align: center;
+}
+
+table.MUDlist a
+{
+  font-weight: normal;
+  text-decoration: underline;
+}
