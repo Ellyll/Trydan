@@ -139,5 +139,6 @@
   </ProjectExtensions>
   <ItemGroup>
     <None Include="Content\favicon.ico" />
+    <None Include=".gitignore" />
   </ItemGroup>
 </Project>
