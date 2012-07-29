@@ -18,22 +18,23 @@ namespace Controllers
 		public ActionResult Index ()
 		{
 			var sessionFactory = CreateSessionFactory();
- 
-			string test = "";
+			
+			IEnumerable<Payment> payments; // = new List<Payment>();
+			IEnumerable<Reading> readings; // = new List<Reading>();
 			
 			using (var session = sessionFactory.OpenSession())
 			{
 			    using (var transaction = session.BeginTransaction())
 			    {
-					var readings = session.CreateCriteria(typeof(Reading)).List<Reading>();
-					foreach (var reading in readings)
-					{
-					    test += reading.TakenOn.ToString() + ":";
-					}
+					payments = session.CreateCriteria(typeof(Payment)).List<Payment>();
+					readings = session.CreateCriteria(typeof(Reading)).List<Reading>();
 				}
 			}
-			ViewData ["Message"] = "Welcome to ASP.NET MVC on Mono!" + " " + test;
-			return View ();
+			
+			var model = new IndexViewModel(payments, readings);
+			
+			//ViewData ["Message"] = "Welcome to ASP.NET MVC on Mono!" + " " + test;
+			return View (model);
 		}
 
 		private static ISessionFactory CreateSessionFactory()
