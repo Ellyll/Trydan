@@ -15,7 +15,7 @@ namespace Controllers
 	[HandleError]
 	public class HomeController : Controller
 	{
-		public ActionResult Index ()
+		public ActionResult Index()
 		{
 			var sessionFactory = CreateSessionFactory();
 			
@@ -24,17 +24,26 @@ namespace Controllers
 			
 			using (var session = sessionFactory.OpenSession())
 			{
-			    using (var transaction = session.BeginTransaction())
-			    {
-					payments = session.CreateCriteria(typeof(Payment)).List<Payment>();
-					readings = session.CreateCriteria(typeof(Reading)).List<Reading>();
-				}
+//			    using (var transaction = session.BeginTransaction())
+//			    {
+//					payments = session.CreateCriteria(typeof(Payment)).List<Payment>();
+//					readings = session.CreateCriteria(typeof(Reading)).List<Reading>();
+//				}
+				
+				payments = session.QueryOver<Payment>().OrderBy(p => p.MadeOn).Desc.Take(5).List();
+				readings = session.QueryOver<Reading>().OrderBy(r => r.TakenOn).Desc.Take(5).List();
 			}
 			
 			var model = new IndexViewModel(payments, readings);
 			
 			//ViewData ["Message"] = "Welcome to ASP.NET MVC on Mono!" + " " + test;
 			return View (model);
+		}
+		
+		public ActionResult AddReading()
+		{
+			var model = new Reading();
+			return View(model);
 		}
 
 		private static ISessionFactory CreateSessionFactory()

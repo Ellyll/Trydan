@@ -8,7 +8,7 @@
 <body>
 	<div class="header"><h1>Trydan</h1></div>
 	<div>
-		<div><a href="">add payment</a></div>
+		<div><%= Html.ActionLink("add reading", "AddReading") %><a href="">add payment</a></div>
 		<% Html.RenderPartial("RecentPayments", new Trydan.RecentPaymentsViewModel(Model.RecentPayments)); %>
 	</div>
 </body>
