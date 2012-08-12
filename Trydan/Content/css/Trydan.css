@@ -1,0 +1,61 @@
+@import url(http://fonts.googleapis.com/css?family=Quicksand);
+@font-face
+{
+	font-family: "SourceSansPro";
+	src: url('/Content/fonts/Source_Sans_Pro/SourceSansPro-Regular.ttf') format('truetype');
+}
+
+body
+{
+	font-family: "SourceSansPro", sans-serif;
+}
+
+h1
+{
+	font-family: "Quicksand", sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 1.8em;
+	/*letter-spacing: 0.025em;*/
+}
+
+div.add_reading a, div.add_payment a
+{
+	padding-left: 1em;
+	background-image: url('/Content/images/icons/add.svg');
+	background-repeat: no-repeat;
+	background-position: left center;
+	background-size: 1em 1em;
+	text-decoration: none;
+	font-weight: bold;
+	color: #888;
+	font-size: 0.8em;
+}
+
+div.add_reading a:hover
+{
+	color: #000;
+	background-image: url('/Content/images/icons/add-hover.svg');
+}
+
+div.payments caption
+{
+	font-size: 0.9em;
+	font-weight: bold;
+	text-align: left;
+	border-bottom: 1px solid #DDD;
+}
+
+div.payments th, div.payments td
+{
+	text-align: left;
+	font-size: 0.8em;
+	border-bottom: 1px solid #DDD;
+	padding-left: 0.25em;
+	padding-right: 0.25em;
+}
+
+div.payments table
+{
+	border-collapse: collapse;
+}

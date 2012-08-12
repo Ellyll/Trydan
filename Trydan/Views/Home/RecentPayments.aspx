@@ -4,15 +4,15 @@
     <caption>Recent Payments</caption>
 	<thead>
 		<tr>
-			<th>Paid On</th>
-			<th>Amount</th>
+			<th class="paid_on">Paid On</th>
+			<th class="amount">Amount</th>
 		</tr>
 	</thead>
 	<tbody>
 	<% foreach (var payment in Model.Payments) { %>
 		<tr>
-			<td><%= payment.MadeOn.ToString() %></td>
-			<td>£<%= Math.Round(payment.Amount, 2).ToString() %></td>
+			<td class="paid_on"><%= payment.MadeOn.ToString() %></td>
+			<td class="amount">£<%= Math.Round(payment.Amount, 2).ToString() %></td>
 		</tr>
 	<% } %>
 	</tbody>
