@@ -38,9 +38,6 @@
     <Reference Include="System.Web.Routing" />
     <Reference Include="System.Web.Extensions" />
     <Reference Include="System.Web.Abstractions" />
-    <Reference Include="System.Web.Mvc, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
-      <SpecificVersion>False</SpecificVersion>
-    </Reference>
     <Reference Include="System.Xml.Linq" />
     <Reference Include="Antlr3.Runtime">
       <HintPath>Packages\Antlr3.Runtime.dll</HintPath>
@@ -78,6 +75,11 @@
     <Reference Include="MySql.Web">
       <HintPath>Packages\mysql.web.dll</HintPath>
     </Reference>
+    <Reference Include="System.Web.Mvc, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Web.DynamicData" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Content\" />
@@ -87,6 +89,10 @@
     <Folder Include="Packages\" />
     <Folder Include="ViewModels\" />
     <Folder Include="ViewModels\Home\" />
+    <Folder Include="Content\fonts\" />
+    <Folder Include="Content\fonts\Source_Sans_Pro\" />
+    <Folder Include="Content\images\icons\" />
+    <Folder Include="Handlers\" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Controllers\HomeController.cs" />
@@ -99,33 +105,17 @@
     <Compile Include="Domain\Payment.cs" />
     <Compile Include="Domain\Maps\PaymentMap.cs" />
     <Compile Include="Domain\Maps\ReadingMap.cs" />
+    <Compile Include="Handlers\SvgHandler.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\Web.config" />
     <Content Include="Views\Home\Index.aspx" />
     <Content Include="Web.config" />
     <Content Include="Global.asax" />
-    <Content Include="Content\css\abermud.css" />
-    <Content Include="Content\css\mudlist_pages.css" />
-    <Content Include="Content\images\20081116-015-Castell-3-c.jpg" />
-    <Content Include="Content\images\Down.png" />
-    <Content Include="Content\images\Draig2.png" />
-    <Content Include="Content\images\Draig4.png" />
-    <Content Include="Content\images\FireCentre.png" />
-    <Content Include="Content\images\Up.png" />
-    <Content Include="Content\images\btn_120x50_built.png" />
-    <Content Include="Content\images\btn_120x50_built_shadow.png" />
-    <Content Include="Content\images\btn_120x50_powered.png" />
-    <Content Include="Content\images\btn_120x50_powered_shadow.png" />
-    <Content Include="Content\images\btn_88x31_built.png" />
-    <Content Include="Content\images\btn_88x31_built_shadow.png" />
-    <Content Include="Content\images\btn_88x31_powered.png" />
-    <Content Include="Content\images\btn_88x31_powered_shadow.png" />
-    <Content Include="Content\images\catalyst_logo.png" />
-    <Content Include="Content\images\rect3694.png" />
     <Content Include="Views\Shared\_Layout.aspx" />
     <Content Include="Views\Home\RecentPayments.aspx" />
     <Content Include="Views\Home\AddReading.aspx" />
+    <Content Include="Content\css\Trydan.css" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <Import Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
@@ -137,7 +127,21 @@
     </MonoDevelop>
   </ProjectExtensions>
   <ItemGroup>
-    <None Include="Content\favicon.ico" />
     <None Include=".gitignore" />
+    <None Include="Content\fonts\Source_Sans_Pro\OFL.txt" />
+    <None Include="Content\fonts\Source_Sans_Pro\SourceSansPro-Black.ttf" />
+    <None Include="Content\fonts\Source_Sans_Pro\SourceSansPro-BlackItalic.ttf" />
+    <None Include="Content\fonts\Source_Sans_Pro\SourceSansPro-Bold.ttf" />
+    <None Include="Content\fonts\Source_Sans_Pro\SourceSansPro-BoldItalic.ttf" />
+    <None Include="Content\fonts\Source_Sans_Pro\SourceSansPro-ExtraLight.ttf" />
+    <None Include="Content\fonts\Source_Sans_Pro\SourceSansPro-ExtraLightItalic.ttf" />
+    <None Include="Content\fonts\Source_Sans_Pro\SourceSansPro-Italic.ttf" />
+    <None Include="Content\fonts\Source_Sans_Pro\SourceSansPro-Light.ttf" />
+    <None Include="Content\fonts\Source_Sans_Pro\SourceSansPro-LightItalic.ttf" />
+    <None Include="Content\fonts\Source_Sans_Pro\SourceSansPro-Regular.ttf" />
+    <None Include="Content\fonts\Source_Sans_Pro\SourceSansPro-Semibold.ttf" />
+    <None Include="Content\fonts\Source_Sans_Pro\SourceSansPro-SemiboldItalic.ttf" />
+    <None Include="Content\images\icons\add.svg" />
+    <None Include="Content\images\icons\add-hover.svg" />
   </ItemGroup>
 </Project>
